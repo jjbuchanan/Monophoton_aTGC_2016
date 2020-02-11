@@ -1,7 +1,8 @@
 #!/bin/bash
 
-cd /afs/hep.wisc.edu/cms/jjbuchanan/aTGC_generation
+export WORKINGDIR="/afs/hep.wisc.edu/cms/jjbuchanan/aTGC_generation"
 
+cd $WORKINGDIR
 scram project CMSSW_9_3_15
 cd CMSSW_9_3_15/src
 cmsenv   
@@ -26,3 +27,15 @@ cd $TOPDIR/SherpaGeneration/Generator/
 source sherpant.sh
 cd $TOPDIR
 scram b -j4
+
+# Set up environment for NTGC_UFO model installation
+cd $TOPDIR
+cmsenv
+cd SherpaGeneration/Generator
+source sherpant.sh
+cd data/models
+
+# Copy NTGC_UFO model from Bhawna's directory
+cp -r /cms/gomber/Sherpa_13TeV/CMSSW_9_3_15/src/SherpaGeneration/Generator/data/models/NTGC_UFO .
+# Install model
+Sherpa-generate-model NTGC_UFO
