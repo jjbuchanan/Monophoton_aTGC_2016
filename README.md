@@ -11,13 +11,14 @@ Run the install instructions in sherpa_installation.sh:\
 Copy the included *custom* version of cmsRun.sh to your working directory
 Change these lines in cmsRun.sh to specify your own directory:\
 359, 360\
-\ These lines are necessary to source sherpant in a way that is accessible to farmout
+\ These lines are necessary to source sherpant in a way that is accessible to farmout\
 Copy Jobgrids_GENSIM_aTGC.sh and Run_GENSIM_aTGC.sh to CMSSW_9_3_15/src/SherpaGeneration/Generator/test\
 Change these lines in Run_GENSIM_aTGC.sh to specify your own directories:\
 144, 149, 151\
 \ Line 151 should point to the custom version of cmsRun.sh
 
 Configure Jobgrids_GENSIM_aTGC.sh with the desired NEVENTS per sample, JOBNAME, VERTEX type, and grid of aTGC parameter values to run on\
+
 Be sure to be logged into lzlogin02, and have your cmsenv and voms proxy active\
 Execute Jobgrids_GENSIM_aTGC.sh
 
