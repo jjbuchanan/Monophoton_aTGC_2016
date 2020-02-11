@@ -1,6 +1,6 @@
 # Monophoton_aTGC_2016
 
-### Step 1: Install Sherpa
+### Step 1: Install Sherpa and aTGC model
 ssh to lzlogin02.hep.wisc.edu\
 Set up your voms proxy\
 Run the install instructions in sherpa_installation.sh:\
