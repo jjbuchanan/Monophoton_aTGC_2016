@@ -1,0 +1,99 @@
+imax * number of bins
+jmax * number of processes minus 1
+kmax * number of nuisance parameters
+
+
+
+shapes data_obs    SB    workspace.root w:data_obs_SR_below0p5
+shapes SigVDM1Med1000 SB    workspace.root w:Signal_SR_below0p5       w:Signal_SR_below0p5_$SYSTEMATIC
+shapes ZnunuG      SB    workspace.root w:ZnunuG_SR_below0p5      w:ZnunuG_SR_below0p5_$SYSTEMATIC
+shapes WG          SB    workspace.root w:WG_SR_below0p5
+shapes QCD         SB    workspace.root w:QCD_SR_below0p5         w:QCD_SR_below0p5_$SYSTEMATIC
+shapes Elefake     SB    workspace.root w:Elefake_SR_below0p5
+shapes BHalo       SB    workspace.root w:Halo_SR_below0p5
+shapes Spikes      SB    workspace.root w:Spikes_SR_below0p5
+shapes GJets       SB    workspace.root w:GJets_SR_below0p5       w:GJets_SR_below0p5_$SYSTEMATIC
+shapes ZllG_MC     SB    workspace.root w:ZllG_SR_below0p5        w:ZllG_SR_below0p5_$SYSTEMATIC
+shapes TTG         SB    workspace.root w:TTG_SR_below0p5         w:TTG_SR_below0p5_$SYSTEMATIC
+shapes TG          SB    workspace.root w:TG_SR_below0p5          w:TG_SR_below0p5_$SYSTEMATIC
+shapes Diphoton    SB    workspace.root w:Diphoton_SR_below0p5    w:Diphoton_SR_below0p5_$SYSTEMATIC
+shapes WZ          SB    workspace.root w:WZ_SR_below0p5          w:WZ_SR_below0p5_$SYSTEMATIC
+shapes ZZ          SB    workspace.root w:ZZ_SR_below0p5          w:ZZ_SR_below0p5_$SYSTEMATIC
+shapes WMuNu       SB    workspace.root w:WMuNu_SR_below0p5       w:WMuNu_SR_below0p5_$SYSTEMATIC
+shapes WTauNu      SB    workspace.root w:WTauNu_SR_below0p5      w:WTauNu_SR_below0p5_$SYSTEMATIC
+shapes WW          SB    workspace.root w:WW_SR_below0p5          w:WW_SR_below0p5_$SYSTEMATIC
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+bin             SB
+observation     -1
+-------------------------------------------------------------------------------------------------------------------------------------------
+bin                             SB             SB       SB       SB       SB       SB      SB      SB      SB      SB      SB      SB       SB      SB      SB      SB      SB      
+process                         SigVDM1Med1000 ZnunuG   WG       QCD      Elefake  BHalo   Spikes  GJets   ZllG_MC TTG     TG      Diphoton WZ      ZZ      WMuNu   WTauNu  WW      
+process                         0              1        2        3        4        5       6       7       8       9       10      12       13      14      15      16      17      
+rate                           -1             -1        1       -1       -1        1      -1      -1      -1      -1      -1      -1       -1      -1      -1      -1      -1       
+-------------------------------------------------------------------------------------------------------------------------------------------
+lumi                     lnN    1.025          1.025    -        -        -        -       -       1.025   1.025   1.025   1.025   1.025    1.025   1.025   1.025   1.025   1.025   
+pix                      lnN    1.009          1.009    -        -        -        -       -       1.009   1.009   1.009   1.009   1.009    1.009   1.009   1.009   1.009   1.009   
+lepveto                  lnN    1.02           1.02     -        -        -        -       -       1.02    1.02    1.02    1.02    1.02     1.02    1.02    1.02    1.02    1.02    
+mcscale                  lnN    1.04           1.04     -        -        -        -       -       1.04    1.04    1.04    1.04    1.04     1.04    1.04    1.04    1.04    1.04    
+mcpdf                    lnN    1.04           1.04     -        -        -        -       -       1.04    1.04    1.04    1.04    1.04     1.04    1.04    1.04    1.04    1.04    
+spike                    lnN    -              -        -        -        -        -       1.36    -       -       -       -       -        -       -       -       -       -       
+phoSF                    lnN    1.007          1.007    -        -        -        -       -       1.007   1.007   1.007   1.007   1.007    1.007   1.007   1.007   1.007   1.007   
+JES                    shape    1              1        -        -        -        -       -       1       1       1       1       1        1       1       1       1       1       
+PES                    shape    1              1        -        -        -        -       -       1       1       1       1       1        1       1       1       1       1       
+qcdscale               shape    1              1        -        -        -        -       -       -       -       -       -       -        -       -       -       -       -       
+straight               shape    1              1        -        -        -        -       -       -       -       -       -       -        -       -       -       -       -       
+twisted                shape    1              1        -        -        -        -       -       -       -       -       -       -        -       -       -       -       -       
+gamma                  shape    1              1        -        -        -        -       -       -       -       -       -       -        -       -       -       -       -       
+SherToMadStat          shape    1              1        -        -        -        -       -       -       -       -       -       -        -       -       -       -       -       
+QCDr                   shape    -              -        -        1        -        -       -       -       -       -       -       -        -       -       -       -       -       
+Eler                     lnN    -              -        -        -        1.073    -       -       -       -       -       -       -        -       -       -       -       -       
+GJetsSignalSBin1       shape    -              -        -        -        -        -       -       1       -       -       -       -        -       -       -       -       -       
+GJetsSignalSBin2       shape    -              -        -        -        -        -       -       1       -       -       -       -        -       -       -       -       -       
+GJetsSignalSBin3       shape    -              -        -        -        -        -       -       1       -       -       -       -        -       -       -       -       -       
+GJetsSignalSBin4       shape    -              -        -        -        -        -       -       1       -       -       -       -        -       -       -       -       -       
+GJetsSignalSBin5       shape    -              -        -        -        -        -       -       1       -       -       -       -        -       -       -       -       -       
+GJetsSignalSBin6       shape    -              -        -        -        -        -       -       1       -       -       -       -        -       -       -       -       -       
+WZSignalSBin1          shape    -              -        -        -        -        -       -       -       -       -       -       -        1       -       -       -       -       
+WZSignalSBin2          shape    -              -        -        -        -        -       -       -       -       -       -       -        1       -       -       -       -       
+WZSignalSBin3          shape    -              -        -        -        -        -       -       -       -       -       -       -        1       -       -       -       -       
+WZSignalSBin4          shape    -              -        -        -        -        -       -       -       -       -       -       -        1       -       -       -       -       
+WZSignalSBin5          shape    -              -        -        -        -        -       -       -       -       -       -       -        1       -       -       -       -       
+WZSignalSBin6          shape    -              -        -        -        -        -       -       -       -       -       -       -        1       -       -       -       -       
+WMuNuSignalSBin1       shape    -              -        -        -        -        -       -       -       -       -       -       -        -       -       1       -       -       
+WMuNuSignalSBin2       shape    -              -        -        -        -        -       -       -       -       -       -       -        -       -       1       -       -       
+WMuNuSignalSBin3       shape    -              -        -        -        -        -       -       -       -       -       -       -        -       -       1       -       -       
+WMuNuSignalSBin4       shape    -              -        -        -        -        -       -       -       -       -       -       -        -       -       1       -       -       
+WMuNuSignalSBin5       shape    -              -        -        -        -        -       -       -       -       -       -       -        -       -       1       -       -       
+WMuNuSignalSBin6       shape    -              -        -        -        -        -       -       -       -       -       -       -        -       -       1       -       -       
+WTauNuSignalSBin1      shape    -              -        -        -        -        -       -       -       -       -       -       -        -       -       -       1       -       
+WTauNuSignalSBin2      shape    -              -        -        -        -        -       -       -       -       -       -       -        -       -       -       1       -       
+WTauNuSignalSBin3      shape    -              -        -        -        -        -       -       -       -       -       -       -        -       -       -       1       -       
+WTauNuSignalSBin4      shape    -              -        -        -        -        -       -       -       -       -       -       -        -       -       -       1       -       
+WTauNuSignalSBin5      shape    -              -        -        -        -        -       -       -       -       -       -       -        -       -       -       1       -       
+WTauNuSignalSBin6      shape    -              -        -        -        -        -       -       -       -       -       -       -        -       -       -       1       -       
+QCDLoPhiSignalSBin1    shape    -              -        -        1        -        -       -       -       -       -       -       -       -        -       -       -       -       
+QCDLoPhiSignalSBin2    shape    -              -        -        1        -        -       -       -       -       -       -       -       -        -       -       -       -       
+QCDLoPhiSignalSBin3    shape    -              -        -        1        -        -       -       -       -       -       -       -       -        -       -       -       -       
+QCDLoPhiSignalSBin4    shape    -              -        -        1        -        -       -       -       -       -       -       -       -        -       -       -       -       
+QCDLoPhiSignalSBin5    shape    -              -        -        1        -        -       -       -       -       -       -       -       -        -       -       -       -       
+QCDLoPhiSignalSBin6    shape    -              -        -        1        -        -       -       -       -       -       -       -       -        -       -       -       -       
+ZZSignalSBin1          shape    -              -        -        -        -        -       -       -       -       -       -       -       -        1       -       -       -       
+ZZSignalSBin2          shape    -              -        -        -        -        -       -       -       -       -       -       -       -        1       -       -       -       
+ZZSignalSBin3          shape    -              -        -        -        -        -       -       -       -       -       -       -       -        1       -       -       -       
+ZZSignalSBin4          shape    -              -        -        -        -        -       -       -       -       -       -       -       -        1       -       -       -       
+ZZSignalSBin5          shape    -              -        -        -        -        -       -       -       -       -       -       -       -        1       -       -       -       
+ZZSignalSBin6          shape    -              -        -        -        -        -       -       -       -       -       -       -       -        1       -       -       -       
+WWSignalSBin1          shape    -              -        -        -        -        -       -       -       -       -       -       -       -        -       -       -       1       
+WWSignalSBin2          shape    -              -        -        -        -        -       -       -       -       -       -       -       -        -       -       -       1       
+WWSignalSBin3          shape    -              -        -        -        -        -       -       -       -       -       -       -       -        -       -       -       1       
+WWSignalSBin4          shape    -              -        -        -        -        -       -       -       -       -       -       -       -        -       -       -       1       
+WWSignalSBin5          shape    -              -        -        -        -        -       -       -       -       -       -       -       -        -       -       -       1       
+WWSignalSBin6          shape    -              -        -        -        -        -       -       -       -       -       -       -       -        -       -       -       1       
+
+Halo_SR_below0p5_bin1_Runc param 0 1
+Halo_SR_below0p5_bin2_Runc param 0 1
+Halo_SR_below0p5_bin3_Runc param 0 1
+Halo_SR_below0p5_bin4_Runc param 0 1
+Halo_SR_below0p5_bin5_Runc param 0 1
+Halo_SR_below0p5_bin6_Runc param 0 1
