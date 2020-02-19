@@ -1,0 +1,1 @@
+Includes code for generating aTGC MC samples using farmout, and for deriving aTGC signal strength limits based on 2016 data.
