@@ -3,9 +3,6 @@
 # Set up working area inside CMSSW_8_1_0/src/HiggsCombine
 cmsenv
 
-# Be sure all the needed histograms and transfer factors are in your working area
-./copy_histos.sh
-
 ## Make data card ##
 combineCards.py -S SA=datacard_signal_above0p5_aTGC.txt SB=datacard_signal_below0p5_aTGC.txt CR_ME=datacard_monoele.txt CR_MM=datacard_monomu.txt > comb_card_aTGC.txt
 
